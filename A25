@@ -1,0 +1,13 @@
+def isPrime(n):
+  #Run a loop from 2 to n/2
+  for i in range(2,(n//2)+1):
+    if(n%i==0):
+      return False
+  return True
+N = int(input())
+#check for every number from 1 to N
+for i in range( 2,N+1):
+  #check if current number is prime
+  if(isPrime(i)):
+    print(i,end="\n")
+   
